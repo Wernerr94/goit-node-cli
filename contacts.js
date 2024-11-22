@@ -25,7 +25,6 @@ async function removeContact(contactId) {
     await fs.writeFile(contactsPath, JSON.stringify(filtered, null, 2));
     return contactToRemove
   }
-  // ...твій код. Повертає об'єкт видаленого контакту. Повертає null, якщо контакт з таким id не знайдений.
 }
 
 async function addContact(name, email, phone) {
